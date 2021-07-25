@@ -18,6 +18,13 @@ enum E_DIFFICULTY {
     HARD = 'hard'
 }
 
+export type UserAnswer = {
+    question: string;
+    answer: string;
+    correct: boolean;
+    correctAnswer: string;
+  }
+
 const shuffleArray = (array: any[]) => {
     return [...array].sort(() => Math.random() - 0.756)
 }
